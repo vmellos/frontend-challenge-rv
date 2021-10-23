@@ -1,0 +1,52 @@
+@media only screen and (max-width: 320px) {
+    .hero {
+        width: 320px;
+        min-height: 593px;
+        height: 593px;
+
+        &__image {
+            background-color: #75BC97;
+            background-image: 
+            url('../../images/hero/mobile/mobile-leaves.png'),
+            url('../../images/hero/mobile/mobile-plantperson.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: top, bottom 15px center;
+            background-size: contain, 85%;
+            min-width: 300px;
+            width: 100vw;
+            height: 100%;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                width: 163px;
+                height: 20px;
+                margin: 2rem 121.67px 31px 35px;
+            }
+
+            .arrow_down {
+                height: 39px;
+                width: 35px;
+                margin: 0px 245px 126px 40px;
+            }
+            
+            .text_align {
+                margin: 0px 35px 16px 34px;
+                
+                .text {
+                    width: 251px;
+                    height: 144px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 49px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
