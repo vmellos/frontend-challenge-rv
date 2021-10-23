@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="app/scss/_global.scss" />
+  <link rel="stylesheet" href="src/assets/styles/_global.scss" />
 </head>
 
 <body>
@@ -14,16 +14,93 @@
     <div class="hero__image">
       <div class="hero__container">
         <div>
-          <img class="logo" src="images/icons/logo-white.svg" alt="Greenthumb" />
+          <figure>
+            <img class="logo" src="src/assets/images/icons/logo-white.svg" alt="Greenthumb logo" />
+          </figure>
         </div>
         <div class="text_align">
           <span class="text">Find your next green friend</span>
         </div>
-        <div><img class="arrow_down" src="./images/icons/arrow-down.svg" alt="Arrow"></div>
+        <div>
+          <figure>
+            <img class="arrow_down" src="src/assets/images/icons/arrow-down.svg" alt="Arrow down icon" />
+          </figure>
+        </div>
       </div>
     </div>
   </section>
-  <script src="app/js/script.js"></script>
+  <main class="feature">
+    <div class="feature__container">
+
+      <div>
+        <div class="feature__sunlight">
+          <figure>
+            <img class="illustrations__sunlight" src="src/assets/images/illustrations/sun.png" alt="Sun image">
+          </figure>
+        </div>
+        <div class="feature__label">
+          <span><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</span>
+        </div>
+        <div class="feature__select">
+          <select class="sunlight">
+            <option selected disabled>Select...</option>
+            <option value="no">No</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div>
+          <figure>
+            <img class="illustrations__water" src="src/assets/images/illustrations/wateringcan.png" alt="Wateringcan image">
+          </figure>
+        </div>
+        <div class="feature__label">
+          <span><strong>2.</strong> How often do you want to <strong>water</strong> your plant?</span>
+        </div>
+        <div class="feature__select">
+          <select class="wateringcan">
+            <option selected disabled>Select...</option>
+            <option value="regularly">Regularly</option>
+            <option value="daily">Daily</option>
+            <option value="rarely">Rarely</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div>
+          <figure>
+            <img class="illustrations__pets" src="src/assets/images/illustrations/dog.png" alt="Pet image">
+          </figure>
+        </div>
+        <div class="feature__label">
+          <span><strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants?</span>
+        </div>
+        <div class="feature__select">
+          <select class="pets">
+            <option selected disabled>Select...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+      <div class="outcome">
+
+        <div class="outcome__title">
+          <span>No results yet…</span>
+        </div>
+        <div class="outcome__subtitle">
+          <span>Use the filters above to find the plant that best fits your environment :)</span>
+        </div>
+        <div class="outcome__placeholder">
+          <img src="src/assets/images/illustrations/no-results.png" alt="No result yet">
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src="src/app/main.js"></script>
 </body>
 
 </html>

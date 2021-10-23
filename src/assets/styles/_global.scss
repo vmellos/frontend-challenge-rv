@@ -1,7 +1,14 @@
 @import '_hero';
+@import '_feature';
 
 html {
     box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -10,3 +17,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.missing-value {
+  border-color: red !important;
+}
