@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <section class="hero">
+  <!-- Hero section -->
+  <section class="hero" id="home">
     <div class="hero__image">
       <div class="hero__container">
         <div>
@@ -29,9 +30,9 @@
       </div>
     </div>
   </section>
+  <!-- Main -->
   <main class="feature">
     <div class="feature__container">
-
       <div>
         <div class="feature__sunlight">
           <figure>
@@ -53,7 +54,8 @@
       <div>
         <div>
           <figure>
-            <img class="illustrations__water" src="src/assets/images/illustrations/wateringcan.png" alt="Wateringcan image">
+            <img class="illustrations__water" src="src/assets/images/illustrations/wateringcan.png"
+              alt="Wateringcan image">
           </figure>
         </div>
         <div class="feature__label">
@@ -68,7 +70,7 @@
           </select>
         </div>
       </div>
-      <div>
+      <div style="padding: 10px">
         <div>
           <figure>
             <img class="illustrations__pets" src="src/assets/images/illustrations/dog.png" alt="Pet image">
@@ -85,20 +87,63 @@
           </select>
         </div>
       </div>
-      <div class="outcome">
-
-        <div class="outcome__title">
+      <div class="no-data" style="display: none">
+        <div class="no-data__title">
           <span>No results yet…</span>
         </div>
-        <div class="outcome__subtitle">
+        <div class="no-data__subtitle">
           <span>Use the filters above to find the plant that best fits your environment :)</span>
         </div>
-        <div class="outcome__placeholder">
+        <div class="no-data__placeholder">
           <img src="src/assets/images/illustrations/no-results.png" alt="No result yet">
         </div>
-
       </div>
     </div>
+      <!-- Product section -->
+      <section class="product">
+        <div class="product__pick"></div>
+        <div class="product__text"><span>Our picks for you</span></div>
+        <div class="product__container">
+        <div class="cards">
+          <div class="list">
+            <div class="list__favorite"></div>
+            <div class="list__image"><img src="" alt="Product"></div>
+            <div class="list__name"></div>
+            <div class="list__details">
+              <div class="list__cost"></div>
+              <div class="list__info"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list__favorite"></div>
+            <div class="list__image"><img src="" alt="Product"></div>
+            <div class="list__name"></div>
+            <div class="list__details">
+              <div class="list__cost"></div>
+              <div class="list__info"></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list__favorite"></div>
+            <div class="list__image"><img src="" alt="Product"></div>
+            <div class="list__name"></div>
+            <div class="list__details">
+              <div class="list__cost"></div>
+              <div class="list__info"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!--  -->
+      <div class="btn">
+          <a href="#home" class="btn__home">
+            <div class="btn__details">
+              <div><img src="src/assets/images/icons/arrow-up.svg" alt="Home icon"></div>
+              <div>back to the top</div>
+            </div>
+          </a>
+      </div>
   </main>
   <script src="src/app/main.js"></script>
 </body>

@@ -1,0 +1,113 @@
+@media only screen and (max-width: 320px) {
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        height: 920px;
+        background: #F2F2F2;
+        align-items: center;
+
+        &__pick {
+            width: 146px;
+            height: 72px;
+            background: url('../images/illustrations/pick.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 35px;
+        }
+
+        &__text {
+            width: 243px;
+            height: 98px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 49px;
+            color: #0C261C;
+            margin: 35px;
+        }
+    }   
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+    }
+
+    .list {
+        width: 258px;
+        height: 321px;
+        margin: 1rem;
+        background: #FFFFFF;
+        box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.0925754);
+        border-radius: 5px;
+
+
+        &__favorite {}
+        &__image {}
+        &__name {}
+        &__details {}
+        &__cost {}
+        &__info {}
+    }
+}
+
+@media only screen and (min-width: 320px) {
+
+    .product {
+        background: #F2F2F2;
+        padding: 5px;
+        
+        &__pick {
+            width: 146px;
+            height: 72px;
+            background: url('../images/illustrations/pick.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 35px;
+        }
+    
+        &__text {
+            width: 243px;
+            height: 98px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 49px;
+            color: #0C261C;
+            margin: 35px;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            height: 920px;
+            background: #F2F2F2;
+            align-items: center;
+        }
+    }  
+    .cards {
+        display: flex;
+    }
+
+    .list {
+        width: 258px;
+        height: 321px;
+        margin: 1rem;
+        background: #FFFFFF;
+        box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.0925754);
+        border-radius: 5px;
+
+
+        &__favorite {}
+        &__image {}
+        &__name {}
+        &__details {}
+        &__cost {}
+        &__info {}
+    }
+}

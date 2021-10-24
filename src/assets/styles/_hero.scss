@@ -9,7 +9,7 @@
             background-image: 
             url('../../assets/images/hero/mobile/mobile-leaves.png'),
             url('../../assets/images/hero/mobile/mobile-plantperson.png');
-            background-repeat: no-repeat, no-repeat;
+            background-repeat: no-repeat;
             background-position: top, bottom 15px center;
             background-size: contain, 85%;
             min-width: 300px;
@@ -45,6 +45,62 @@
                     font-size: 40px;
                     line-height: 49px;
                     color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .hero {
+        width: 720px;
+        min-height: 593px;
+        height: 593px;
+
+        &__image {
+            background-color: #75BC97;
+            background-image: 
+            url('../../assets/images/hero/desktop/left-leaves.png'),
+            url('../../assets/images/hero/desktop/plantperson.png'),
+            url('../../assets/images/hero/desktop/right-leaves.png');
+            background-repeat: no-repeat;
+            background-position: left, right, right;
+            background-size: contain;
+            min-width: 300px;
+            width: 100vw;
+            height: 100%;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                width: 209px;
+                height: 25px;
+                margin: 2rem 121.67px 31px 0px;
+            }
+
+            .arrow_down {
+                height: 36px;
+                width: 46px;
+            }
+            
+            .text_align {
+                margin: 0px 35px 16px 34px;
+                
+                .text {
+                    width: 400px;
+                    // position: absolute;
+                    height: 252px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 70px;
+                    line-height: 85px;
+
+                    color: #FFFFFF;
+
                 }
             }
         }

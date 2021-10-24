@@ -13,7 +13,7 @@ wateringcan.addEventListener("change", event => clearError(event));
 pets.addEventListener("change", event => clearError(event));
 
 /* Last input is the submit handler */
-pets.addEventListener("change", () => handleSubmit());
+pets.addEventListener("click", () => handleSubmit());
 
 
 /**
