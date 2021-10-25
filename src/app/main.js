@@ -9,15 +9,16 @@ import Drops1 from '../assets/images/icons/drops1.svg'
 import { request } from "./api";
 import { clearError } from "./utils";
 
+const IS_MOBILE = 320
 const ICONS = {
     "low": LowSun,
     "no": NoSun,
-    "high": LowSun,
+    "high": LowSun, // FIXME: Im not found the correct icon
     "rarely": Drops1,
     "daily": Drops2,
     "regularly": Drops3,
     "yes": Pet,
-    "no": Toxic,
+    "no": Toxic // TODO: Improve way of handle API response for NoSun and Toxic icons
 }
 
 /* Selectors */
@@ -53,6 +54,7 @@ const handleSubmit = () => {
         }
     }
 
+    // validate the submit
     const values = Object.values(payload).filter(item => !item.value || item.value.toLowerCase().includes('select...'))
 
     if (values.length === 0) {
@@ -68,11 +70,11 @@ const handleSubmit = () => {
                 products.style.display = 'block'
                 placeholder.style.display = 'none'
 
-                elem.innerHTML = ''
+                elem.innerHTML = '' // TODO: Improve way of remove the elements
 
                 response.map(card => {
                         
-                        if (card.staff_favorite) {
+                        if (card.staff_favorite && window.screen.availWidth < IS_MOBILE) {
                             elem.innerHTML += `
                             <div class="list" id="${card.id}">
                                 <div class="favorite"></div>
@@ -104,7 +106,6 @@ const handleSubmit = () => {
                 })
             })
             .catch(err => {
-                console.log(err)
                 alert('Something went wrong')
             })
 

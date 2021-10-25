@@ -81,7 +81,7 @@
         }
 
         &__placeholder {
-            margin: 35px 0px
+            margin: 110px;
         }
     }
 }
@@ -140,10 +140,11 @@
 
     .no-data {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 486px;
         background-color: #F2F2F2;
         align-items: center;
+        justify-content: center;
 
         &__title {
             width: 250px;
